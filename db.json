@@ -1,0 +1,40 @@
+{
+"cards": [
+  {
+      "id": 1,
+      "name": "Cirurgia Oral",
+      "photo": "src/assets/oral.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Clareamento",
+      "photo":"src/assets/clareamento.png"
+      
+    },
+    {
+      "id": 3,
+      "name": "Endodotia",
+      "photo": "src/assets/endodotia.jpg"
+      
+    },
+    {
+      "id": 4,
+      "name": "Periodontia",
+      "photo":"src/assets/periodontia.png"
+     
+    },
+    {
+      "id": 5, 
+      "name": "Dentista",
+      "photo": "src/assets/dentista.jpg"
+
+    },
+    {
+      "id": 6,
+      "name": "Aparelho",
+      "photo": "src/assets/aparelho.jpg"
+      
+    }
+    
+  ]
+}
