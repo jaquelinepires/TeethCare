@@ -8,7 +8,6 @@ import { Hero } from '../Hero'
 import { Navbar } from '../Navbar'
 import { Services } from '../Services'
 import { Sidebar } from '../Sidebar'
-import Test from '../Test'
 
 import { Testimonials } from '../Testimonials'
 
@@ -22,8 +21,7 @@ export function Home() {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
       </Router>
-      {/* <Hero /> */}
-      <Test />
+      <Hero />
       <Services />
       <About />
       <Testimonials />

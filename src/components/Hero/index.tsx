@@ -1,21 +1,24 @@
-import { FaWhatsapp } from 'react-icons/fa'
 import {
   Container,
-  Header,
-  HeaderContent,
+  ContentLeft,
+  LeftWrapper,
+  Right,
   Title,
   Subtitle,
   Message,
   ButtonWhatsapp,
-  ImageHero,
+  ImageMe,
+  Bg,
 } from './styles'
-import abcd from '../../assets/abcd.png'
+
+import me from '../../assets/me.png'
+import { FaWhatsapp } from 'react-icons/fa'
 
 export function Hero() {
   return (
-    <Container id="home">
-      <Header>
-        <HeaderContent>
+    <Container>
+      <ContentLeft>
+        <LeftWrapper>
           <Title>BOAS-VINDAS 👋</Title>
           <Subtitle>TENHA UM SORRISO SAUDÁVEL</Subtitle>
           <Message>
@@ -26,11 +29,12 @@ export function Hero() {
             <FaWhatsapp size="24" />
             Agendar Avaliação
           </ButtonWhatsapp>
-        </HeaderContent>
-        <div>
-          <ImageHero src={abcd}></ImageHero>
-        </div>
-      </Header>
+        </LeftWrapper>
+      </ContentLeft>
+      <Right>
+        <Bg></Bg>
+        <ImageMe src={me} alt="" className="i-img" />
+      </Right>
     </Container>
   )
 }

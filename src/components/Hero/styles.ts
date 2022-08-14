@@ -1,42 +1,50 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 100%;
-  height: 90vh;
-  margin-top: 80px;
-  background: radial-gradient(
-    circle,
-    rgba(42, 167, 255, 1) 25%,
-    rgba(65, 178, 253, 1) 36%,
-    rgba(132, 210, 246, 1) 52%,
-    rgba(145, 229, 246, 1) 100%
-  );
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    margin-bottom: 5rem;
-  }
-`
-
-export const Header = styled.div`
+  display: flex;
   width: 68.75rem;
   margin-inline: auto;
-  display: flex;
+  height: 100vh;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
     flex-direction: column;
-    text-align: center;
+    width: 100%;
   }
 `
+export const ContentLeft = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  @media screen and (max-width: 768px) {
+  }
+`
+export const Right = styled.div`
+  flex: 1;
+  position: relative;
+`
+export const LeftWrapper = styled.div`
+  padding: 2rem;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+`
 export const Title = styled.h4`
   margin-bottom: 1rem;
   color: #152b3c;
-  padding-top: 5rem;
 
   @media screen and (max-width: 768px) {
-    padding-top: 2.5rem;
+    padding-top: 6rem;
   }
 `
 export const Subtitle = styled.h1`
@@ -44,39 +52,26 @@ export const Subtitle = styled.h1`
   color: #152b3c;
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 1rem;
     font-size: 3rem;
     text-align: center;
     font-size: 2.125rem;
   }
 `
 export const Message = styled.p`
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   color: #495057;
-  width: 35rem;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
     text-align: center;
     font-size: 1.125rem;
+    /* display: none; */
   }
 `
-export const HeaderContent = styled.div`
-  text-align: left;
-  width: 50rem;
-
-  @media screen and (max-width: 768px) {
-    text-align: center;
-    width: 100%;
-    padding-inline: 1.5rem;
-  }
-`
-
 export const ButtonWhatsapp = styled.a`
   display: flex;
   align-items: center;
-  margin-top: 6rem;
-  padding: 1rem 2rem;
+  margin-top: 5rem;
+  padding: 1.5rem 2rem;
   font-size: 0.875em;
   text-transform: uppercase;
   font-weight: 700;
@@ -109,13 +104,27 @@ export const ButtonWhatsapp = styled.a`
   @media screen and (max-width: 768px) {
     margin-top: 2rem;
     margin-inline: auto;
+    padding: 1rem 2rem;
   }
 `
-export const ImageHero = styled.img`
+export const ImageMe = styled.img`
+  /* width: 100%; */
+  height: 100%;
   object-fit: cover;
+  position: absolute;
+  left: 4rem;
 
   @media screen and (max-width: 768px) {
-    width: 263px;
-    height: 342.53px;
+    width: 60%;
+    margin-inline: auto;
   }
+`
+export const Bg = styled.div`
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: #152b3c;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 `
