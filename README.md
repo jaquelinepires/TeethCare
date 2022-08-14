@@ -2,8 +2,6 @@
 
 <img src="src/assets/gif.gif">
 
----
-
 ## 👨🏻‍💻 Sobre o Projeto
 
 Um projeto pessoal que colocasse meus conhecimentos em prática. Então crie o TeethCare, uma HomePage
