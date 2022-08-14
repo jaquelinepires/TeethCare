@@ -6,14 +6,10 @@ import {
   Title,
   Subtitle,
   Message,
-  Image,
-  // Card,
-  // Description,
-  // Amount,
-  // Paragraph,
   ButtonWhatsapp,
+  ImageHero,
 } from './styles'
-import dent from '../../assets/dent.jpg'
+import abcd from '../../assets/abcd.png'
 
 export function Hero() {
   return (
@@ -31,8 +27,10 @@ export function Hero() {
             Agendar Avaliação
           </ButtonWhatsapp>
         </HeaderContent>
+        <div>
+          <ImageHero src={abcd}></ImageHero>
+        </div>
       </Header>
-      <Image src={dent} alt=""></Image>
     </Container>
   )
 }

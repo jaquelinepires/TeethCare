@@ -13,14 +13,14 @@ import {
   Right,
   Message,
 } from './styles'
-import about from '../../assets/about.jpg'
+import nos from '../../assets/nos.jpg'
 
-export function About2() {
+export function About() {
   return (
     <Container id="about">
       <HeaderContainer>
         <HeadingLine />
-        <Title>Sobre nós</Title>
+        <Title>Sobre mim</Title>
         <Subtitle>Entenda quem somos e por que existimos</Subtitle>
       </HeaderContainer>
       <Content>
@@ -29,14 +29,14 @@ export function About2() {
             <ImageBg></ImageBg>
 
             <ImageLg
-              src={about}
+              src={nos}
               style={{ width: '400px' }}
               alt=""
               className="lg"
             />
 
             <ImageSm
-              src={about}
+              src={nos}
               style={{ width: '300px' }}
               alt=""
               className="sm"

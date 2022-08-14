@@ -6,8 +6,7 @@ export const Container = styled.div`
   margin-inline: auto;
 
   @media screen and (max-width: 768px) {
-    margin: 0;
-    padding-inline: 1.5rem;
+    margin-top: 5rem;
   }
 `
 export const Content = styled.h1`
@@ -34,8 +33,11 @@ export const HeadingLine = styled.div`
     background-color: #b22222;
   }
 `
-export const Header = styled.div``
-export const HeaderContainer = styled.header``
+export const HeaderContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    padding-inline: 1.5rem;
+  }
+`
 
 export const Title = styled.h1`
   margin-bottom: 1rem;
@@ -50,6 +52,7 @@ export const Subtitle = styled.h4`
 export const Left = styled.div``
 export const ImageAbout = styled.div`
   position: relative;
+  left: 1.5rem;
 
   &:hover .sm {
     opacity: 0;
@@ -69,6 +72,9 @@ export const ImageBg = styled.img`
   position: absolute;
   bottom: 0;
   background: #152b3c;
+
+  @media screen and (max-width: 768px) {
+  }
 `
 export const ImageLg = styled.img`
   position: relative;
@@ -101,6 +107,9 @@ export const Message = styled.div`
 
   @media screen and (max-width: 768px) {
     margin: 0;
-    width: 40%;
+    padding-inline: 1.5rem;
+    width: 26rem;
+    font-size: 0.875rem;
+    text-align: left;
   }
 `

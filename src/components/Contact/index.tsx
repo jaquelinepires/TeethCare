@@ -85,6 +85,19 @@ export function Contact() {
       <Content>
         <ContainerContact>
           <article>
+            <MapPin size={32} weight="fill" color="#960200" />
+            <h4>Endereço</h4>
+            <h5>Avenida antonio carlos magalhães</h5>
+            <a
+              href="https://wa.me/5571992599502"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
+          </article>
+
+          <article>
             <Envelope size={32} weight="fill" color="#4aa8dc" />
             <h4>Email</h4>
             <h5>piresjaqueline17@gmail.com</h5>
@@ -101,19 +114,6 @@ export function Contact() {
             <WhatsappLogo size={32} weight="fill" color="#72c24d" />
             <h4>Whatsapp</h4>
             <h5>(71) 99259-9502</h5>
-            <a
-              href="https://wa.me/5571992599502"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Send a message
-            </a>
-          </article>
-
-          <article>
-            <MapPin size={32} weight="fill" color="#960200" />
-            <h4>Endereço</h4>
-            <h5>Avenida antonio carlos magalhães</h5>
             <a
               href="https://wa.me/5571992599502"
               target="_blank"

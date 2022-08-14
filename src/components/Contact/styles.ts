@@ -49,14 +49,17 @@ export const ContainerContact = styled.div`
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
-    color: #fff;
+    color: #949494;
   }
   h4 {
-    color: #fff;
+    color: #949494;
+    h4:hover {
+      color: #152b3c;
+    }
   }
 
   h5 {
-    color: #fff;
+    color: #949494;
   }
 `
 

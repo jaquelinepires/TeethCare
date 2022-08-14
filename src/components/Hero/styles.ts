@@ -2,29 +2,41 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
+  height: 90vh;
   margin-top: 80px;
-  margin-bottom: 10rem;
-  background-color: #fafafa;
-  overflow: hidden;
+  background: radial-gradient(
+    circle,
+    rgba(42, 167, 255, 1) 25%,
+    rgba(65, 178, 253, 1) 36%,
+    rgba(132, 210, 246, 1) 52%,
+    rgba(145, 229, 246, 1) 100%
+  );
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 `
 
 export const Header = styled.div`
   width: 68.75rem;
   margin-inline: auto;
+  display: flex;
 
   @media screen and (max-width: 768px) {
-    padding-inline: 1.5rem;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
   }
 `
 
 export const Title = styled.h4`
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
   color: #152b3c;
   padding-top: 5rem;
 
   @media screen and (max-width: 768px) {
-    padding-top: 5.3rem;
-    text-align: left;
+    padding-top: 2.5rem;
   }
 `
 export const Subtitle = styled.h1`
@@ -32,29 +44,31 @@ export const Subtitle = styled.h1`
   color: #152b3c;
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
     font-size: 3rem;
-    text-align: left;
+    text-align: center;
+    font-size: 2.125rem;
   }
 `
 export const Message = styled.p`
   margin-top: 1rem;
-  color: #152b3c;
+  color: #495057;
   width: 35rem;
 
   @media screen and (max-width: 768px) {
-    width: 90%;
-    text-align: left;
+    width: 100%;
+    text-align: center;
+    font-size: 1.125rem;
   }
 `
 export const HeaderContent = styled.div`
   text-align: left;
-  position: absolute;
   width: 50rem;
 
   @media screen and (max-width: 768px) {
     text-align: center;
     width: 100%;
+    padding-inline: 1.5rem;
   }
 `
 
@@ -93,17 +107,15 @@ export const ButtonWhatsapp = styled.a`
     transform: translateX(0);
   }
   @media screen and (max-width: 768px) {
+    margin-top: 2rem;
     margin-inline: auto;
   }
 `
-export const Image = styled.img`
-  width: 100vw;
-  height: 80vh;
+export const ImageHero = styled.img`
   object-fit: cover;
-  padding: 0;
-  margin: 0;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 263px;
+    height: 342.53px;
   }
 `

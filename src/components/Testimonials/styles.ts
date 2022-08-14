@@ -71,14 +71,27 @@ export const Description = styled.div`
 export const Name = styled.h4`
   font-size: 1rem;
   text-align: center;
-  color: #b22222;
+  color: #949494;
 `
-export const Message = styled.h2`
-  color: white;
+export const Blockquote = styled.h2`
+  color: #fff;
   font-weight: 300;
   display: block;
   width: 80%;
   margin: 0.8rem auto 0;
   font-size: 0.875rem;
   text-align: center;
+
+  span {
+    position: absolute;
+    top: 8.4rem;
+    left: 4.4rem;
+    font: 700 2.5rem serif;
+    color: #b22222;
+
+    @media screen and (max-width: 768px) {
+      top: 8.4rem;
+      left: 2.5rem;
+    }
+  }
 `

@@ -48,6 +48,9 @@ export const NavLogo = styled(LinkR)<Props>`
     margin-left: 48px;
   }
 `
+export const Logo = styled.img`
+  width: 40px;
+`
 export const MobileIcon = styled.div<Props>`
   display: none;
   @media screen and (max-width: 768px) {
@@ -92,6 +95,6 @@ export const NavLinks = styled(LinkS)<Props>`
   }
 
   &.active {
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #960200;
   }
 `

@@ -10,7 +10,7 @@ import {
   ImageCard,
   Description,
 } from './styles'
-import data from '../../../db.json'
+import data from '../../db.json'
 
 export function Services() {
   const cards = data.cards

@@ -1,60 +1,29 @@
-import bradesco from '../../assets/bradesco.png'
-import sulamerica from '../../assets/sulamerica.png'
-import portoseguro from '../../assets/portoseguro.png'
-import odontoprev from '../../assets/odontoprev.png'
-import unimed from '../../assets/unimed.png'
-import sempreodonto from '../../assets/sempreodonto.png'
-import odontosa from '../../assets/odontosa.png'
-import odontoserve from '../../assets/odontoserve.png'
+import { Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/pagination'
 import 'swiper/css'
 import { Container, ContainerPhoto, ImageHealthPlan } from './styles'
+import db from '../../db.json'
 
 export function HealthPlan() {
+  const healthPlan = db.healthPlan
   return (
     <Container>
       <Swiper
-        breakpoints={{
-          1024: {
-            width: 1024,
-            slidesPerView: 4,
-          },
-          764: {
-            width: 764,
-            slidesPerView: 2,
-          },
+        modules={[Autoplay]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
-        spaceBetween={10}
-        slidesPerView={1}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        spaceBetween={0}
+        slidesPerView={4}
       >
         <ContainerPhoto>
-          <SwiperSlide>
-            <ImageHealthPlan src={bradesco} className="photo" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ImageHealthPlan src={sempreodonto} className="photo" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ImageHealthPlan src={portoseguro} className="photo" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ImageHealthPlan src={unimed} className="photo" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ImageHealthPlan src={sulamerica} className="photo" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ImageHealthPlan src={odontoprev} className="photo" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ImageHealthPlan src={odontoserve} className="photo" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ImageHealthPlan src={odontosa} className="photo" />
-          </SwiperSlide>
+          {healthPlan.map((user) => (
+            <SwiperSlide key={user.id}>
+              <ImageHealthPlan src={user.photo} />
+            </SwiperSlide>
+          ))}
         </ContainerPhoto>
       </Swiper>
     </Container>

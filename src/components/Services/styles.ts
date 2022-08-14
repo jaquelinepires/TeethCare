@@ -3,11 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 68.75rem;
   margin-inline: auto;
-  padding-top: 6.75rem;
 
   @media screen and (max-width: 768px) {
     width: 100%;
     padding-inline: 1.5rem;
+    padding-top: 5rem;
   }
 `
 

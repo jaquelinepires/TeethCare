@@ -1,10 +1,12 @@
 import { TextAlignLeft } from 'phosphor-react'
 import { useEffect, useState } from 'react'
 import { animateScroll as scroll } from 'react-scroll'
+import tooth from '../../assets/tooth.png'
 import {
   Container,
   NavBarContainer,
   NavLogo,
+  Logo,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -36,7 +38,7 @@ export function Navbar({ toggle }: NavProps) {
     <Container scrollNav={scrollNav}>
       <NavBarContainer>
         <NavLogo to="/" onClick={toggleHome} scrollNav={scrollNav}>
-          Logo
+          <Logo src={tooth}></Logo>
         </NavLogo>
         <MobileIcon onClick={toggle} scrollNav={scrollNav}>
           <TextAlignLeft size={32} />
@@ -51,7 +53,7 @@ export function Navbar({ toggle }: NavProps) {
               spy={true}
               offset={-80}
             >
-              About
+              Sobre
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -64,7 +66,7 @@ export function Navbar({ toggle }: NavProps) {
               offset={-80}
               activeClass="active"
             >
-              Services
+              Serviços
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -77,7 +79,7 @@ export function Navbar({ toggle }: NavProps) {
               offset={-80}
               activeClass="active"
             >
-              testimonial
+              Depoimentos
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -90,7 +92,7 @@ export function Navbar({ toggle }: NavProps) {
               offset={-80}
               activeClass="active"
             >
-              Contact
+              Contato
             </NavLinks>
           </NavItem>
         </NavMenu>
