@@ -41,8 +41,9 @@ $ yarn
 ```
 $ yarn start
 ```
+- Deploy: [TeethCare](https://teeth-care.vercel.app/)
 
-Caso não abra automaticamente, acesse http://localhost:3000 para visualizá-lo no navegador.
+- Caso não abra automaticamente, acesse http://localhost:3000 para visualizá-lo no navegador.
 
 ---
 
