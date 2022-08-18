@@ -14,7 +14,7 @@ responsivo permite o cliente entre em contato.
 - React
 - Typescript
 - Styled-components
-- GetForm
+- react hook form
 
 ---
 
