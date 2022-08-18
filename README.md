@@ -1,6 +1,7 @@
-<h1 align=center># TeethCare</h1>
+<h1 align="center">
+    <img src="src/assets/gif.gif" width="600px"> 
+</h1>
 
-<img src="src/assets/gif.gif">
 
 ## 👨🏻‍💻 Sobre o Projeto
 
